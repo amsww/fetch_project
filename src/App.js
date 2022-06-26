@@ -8,11 +8,7 @@ function App() {
 
   
   const [data,setData] = useState([]);
-  const [number,setNumber] = useState(101)
-
   useEffect(()=> fetchAPI,[])
-
-
 
 
   const fetchAPI = async() => {
@@ -26,9 +22,7 @@ function App() {
             method: "POST",
             body: JSON.stringify({
               title,
-              body,
-              id:number,
-              userId:11
+              body
             }),
             headers: {
               "Content-type": "application/json; charset=UTF-8",
@@ -37,10 +31,8 @@ function App() {
       response =response.status == 201 &&  await  response.json();
       console.log(response)
       setData([...data,response])
-      setNumber(number => number+1)
         };
 
-        // console.log(data)
 
 const onEdit = async (id , title, body) => {
     let response =  await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
