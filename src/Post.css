@@ -1,0 +1,52 @@
+.Post{
+    width: 35vw;
+    min-height: 80px;
+    margin: 30px 7vw;
+    padding: 5px;
+    border: aquamarine 2px solid;
+}
+
+.postDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titlePost{
+    background-color: sandybrown;
+    margin: 10px auto;
+    width: auto;
+}
+
+.inputDiv{
+    display: block;
+}
+
+.addPost{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto;
+}
+
+.addPostDiv{
+margin: 20px auto;
+}
+
+.input{
+    height: 30px;
+    border: 1px black solid;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.submitButton{
+    padding: 4px;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    width: 50px;
+}
+
+.submitButton:active{
+    color: black;
+    background-color: white;
+}
